@@ -36,3 +36,17 @@ Intern: Rubab Zulfiqar
 - Concluded that `Pclass` most strongly affects survival
 
 **Tools used:** Python, pandas, matplotlib, seaborn
+
+## Task 3: Logistic Regression - Survival Prediction
+
+**Objective:** Build the first machine learning classification model to predict passenger survival.
+
+**What I did:**
+- Encoded categorical columns (`Sex`, `Embarked`) using `pd.get_dummies()`
+- Split the dataset into training and test sets (80/20 split) using `train_test_split`
+- Trained a Logistic Regression model on features: Pclass, Age, SibSp, Parch, Fare, Sex, Embarked
+- Evaluated the model using accuracy score and a confusion matrix
+
+**Result:** Achieved an accuracy of **0.81** on the test set.
+
+**Tools used:** Python, scikit-learn, pandas
