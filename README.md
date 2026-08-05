@@ -50,3 +50,18 @@ Intern: Rubab Zulfiqar
 **Result:** Achieved an accuracy of **0.81** on the test set.
 
 **Tools used:** Python, scikit-learn, pandas
+
+## Task 4: Linear Regression - House Price Prediction
+
+**Objective:** Predict house prices using regression, a core ML technique for pricing and forecasting problems.
+
+**What I did:**
+- Used the California Housing dataset from `sklearn.datasets`
+- Selected 5 features: MedInc, HouseAge, AveRooms, AveBedrms, Population
+- Trained a Linear Regression model with an 80/20 train-test split
+- Evaluated using RMSE and R² score
+- Plotted predicted vs. actual prices to visually assess model quality
+
+**Result:** RMSE = **0.80**, R² Score = **0.51**
+
+**Tools used:** Python, scikit-learn, pandas, matplotlib
