@@ -65,3 +65,17 @@ Intern: Rubab Zulfiqar
 **Result:** RMSE = **0.80**, R² Score = **0.51**
 
 **Tools used:** Python, scikit-learn, pandas, matplotlib
+
+## Task 5: Model Evaluation + Hyperparameter Tuning
+
+**Objective:** Go beyond accuracy to properly evaluate a classification model, and tune hyperparameters systematically.
+
+**What I did:**
+- Calculated Precision, Recall, and F1-score using `classification_report`
+- Explained why accuracy alone is misleading for imbalanced datasets
+- Tuned the Logistic Regression model's `C` and `solver` using `GridSearchCV`
+- Compared original vs tuned model performance
+
+**Result:** Original model performed slightly better (Accuracy 0.81) than the tuned model (Accuracy 0.78) — tuning didn't improve results in this case, showing that default parameters aren't always beaten by tuning.
+
+**Tools used:** Python, scikit-learn
