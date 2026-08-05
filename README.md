@@ -79,3 +79,20 @@ Intern: Rubab Zulfiqar
 **Result:** Original model performed slightly better (Accuracy 0.81) than the tuned model (Accuracy 0.78) — tuning didn't improve results in this case, showing that default parameters aren't always beaten by tuning.
 
 **Tools used:** Python, scikit-learn
+
+## Task 6: Customer Churn Prediction (Decision Tree vs Logistic Regression)
+
+**Objective:** Predict customer churn using the Telco Customer Churn dataset — a real business problem across telecom, banking, and SaaS.
+
+**What I did:**
+- Performed EDA on churn vs contract type, tenure, and monthly charges
+- Noted class imbalance (~73% No churn, ~27% Yes churn) and used stratified train-test split
+- Trained and compared Decision Tree and Logistic Regression models
+- Identified top 3 churn drivers using `.feature_importances_`
+
+**Results:**
+- Decision Tree Accuracy: 0.79
+- Logistic Regression Accuracy: 0.80 (slightly better, especially on churn class)
+- Top churn drivers: **tenure**, **Fiber Optic internet service**, **TotalCharges**
+
+**Tools used:** Python, scikit-learn, pandas, matplotlib, seaborn
