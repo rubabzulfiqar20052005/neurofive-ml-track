@@ -110,3 +110,22 @@ Intern: Rubab Zulfiqar
 **Result:** Pipeline accuracy = **0.80**, nearly matching the manual model's 0.81 — confirming the pipeline works correctly while being more robust and reusable.
 
 **Tools used:** Python, scikit-learn, joblib
+
+## Task 8: Ensemble Methods - Random Forest vs XGBoost
+
+**Objective:** Compare ensemble methods (Random Forest, XGBoost) against single models for stronger, more reliable predictions.
+
+**What I did:**
+- Trained Random Forest and XGBoost classifiers on the Titanic dataset
+- Compared their accuracy against the earlier Logistic Regression model
+- Plotted and compared feature importances for both ensemble models
+- Explained the difference between bagging (Random Forest) and boosting (XGBoost)
+
+**Results:**
+| Model | Accuracy |
+|-------|----------|
+| Logistic Regression | 0.81 |
+| Random Forest | 0.82 |
+| XGBoost | 0.80 |
+
+**Tools used:** Python, scikit-learn, xgboost
