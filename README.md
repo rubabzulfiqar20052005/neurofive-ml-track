@@ -96,3 +96,17 @@ Intern: Rubab Zulfiqar
 - Top churn drivers: **tenure**, **Fiber Optic internet service**, **TotalCharges**
 
 **Tools used:** Python, scikit-learn, pandas, matplotlib, seaborn
+
+## Task 7: Building a Reusable ML Pipeline
+
+**Objective:** Replace manual preprocessing with a clean, reusable scikit-learn Pipeline to avoid inconsistent transformations and data leakage.
+
+**What I did:**
+- Engineered 2 new features: `FamilySize` (SibSp + Parch + 1) and `IsAlone`
+- Built a `ColumnTransformer` applying `StandardScaler` to numerical columns and `OneHotEncoder` to categorical columns
+- Chained preprocessing and Logistic Regression into a single `Pipeline`
+- Saved the final pipeline using `joblib`
+
+**Result:** Pipeline accuracy = **0.80**, nearly matching the manual model's 0.81 — confirming the pipeline works correctly while being more robust and reusable.
+
+**Tools used:** Python, scikit-learn, joblib
