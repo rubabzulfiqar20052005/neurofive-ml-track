@@ -129,3 +129,17 @@ Intern: Rubab Zulfiqar
 | XGBoost | 0.80 |
 
 **Tools used:** Python, scikit-learn, xgboost
+
+## Task 9: Handling Imbalanced Data (Churn Dataset)
+
+**Objective:** Recognize and properly handle class imbalance instead of letting it silently hurt model usefulness.
+
+**What I did:**
+- Verified class imbalance (~73% No Churn, ~27% Churn) and visualized it with a bar chart
+- Applied `class_weight='balanced'` to Logistic Regression to address the imbalance
+- Compared Precision/Recall/F1 before and after balancing
+- Explained why accuracy alone is misleading for imbalanced datasets
+
+**Result:** Balancing improved churn-class recall from 0.56 to 0.79 (catching far more actual churners), at the cost of precision and overall accuracy (0.80 → 0.74) — a worthwhile trade-off for a churn use case.
+
+**Tools used:** Python, scikit-learn
