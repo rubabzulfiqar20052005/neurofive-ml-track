@@ -1,0 +1,9 @@
+## Case Study: Bringing Data-Driven Pricing to Pakistan's Real Estate Market
+
+Pakistan's real estate market moves largely on word-of-mouth and gut feeling — a seller in DHA Karachi might price a house based on what a neighbor sold theirs for, with little reference to broader market data. This creates inefficiency: buyers overpay in hot markets, sellers underprice in cooler ones, and agents spend significant time on manual valuation.
+
+This project addresses that gap by building a machine learning model trained on over 118,000 real property listings from Zameen.com, Pakistan's largest property platform. Rather than relying on a single "rule of thumb," the model learns from actual market patterns — how location, property type, size, and room count interact to determine price across five major cities.
+
+The results are meaningful: the final XGBoost model explains 84.6% of the variation in house prices (R² = 0.846), with an average error of roughly PKR 9.7 million on a dataset where prices range from a few million to over 180 million rupees. More importantly, the analysis surfaced a genuinely useful business insight — location (particularly DHA Defence) and city (particularly Karachi) are stronger price predictors than raw square footage, suggesting that any future pricing tool should weight neighborhood data heavily rather than defaulting to size-based estimates.
+
+Deployed as a live Streamlit app, this tool could realistically serve as a first-pass valuation aid for property agents, buyers doing due diligence, or even Zameen.com itself as a "suggested price" feature — reducing the information asymmetry that currently defines property pricing in Pakistan.
