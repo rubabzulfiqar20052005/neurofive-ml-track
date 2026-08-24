@@ -143,3 +143,15 @@ Intern: Rubab Zulfiqar
 **Result:** Balancing improved churn-class recall from 0.56 to 0.79 (catching far more actual churners), at the cost of precision and overall accuracy (0.80 → 0.74) — a worthwhile trade-off for a churn use case.
 
 **Tools used:** Python, scikit-learn
+## Task 10: Deployed Streamlit Web App
+
+**Objective:** Turn the best-performing model into a live, shareable web app.
+
+**What I did:**
+- Saved the best pipeline (Random Forest, 0.83 accuracy) using `joblib`
+- Built a Streamlit app with input fields for passenger details (class, sex, age, fare, family info, embarkation)
+- Deployed the app on Streamlit Community Cloud
+
+**Live App:** [Try it here](https://neurofive-ml-track-5ro9cpi4auif7prtb5zeff.streamlit.app/)
+
+**Tools used:** Python, Streamlit, scikit-learn
