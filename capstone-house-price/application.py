@@ -1,9 +1,11 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import os
 
-model = joblib.load('house_price_model.pkl')
-model_columns = joblib.load('model_columns.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model = joblib.load(os.path.join(BASE_DIR, 'house_price_model.pkl'))
+model_columns = joblib.load(os.path.join(BASE_DIR, 'model_columns.pkl'))
 
 st.title('Pakistan House Price Predictor')
 st.write('Estimate a fair market price for a property based on Zameen.com listing data')
@@ -39,5 +41,4 @@ if st.button('Predict Price'):
 
     input_df = pd.DataFrame([input_dict])[model_columns]
     prediction = model.predict(input_df)[0]
-
     st.success(f'Estimated Price: PKR {prediction:,.0f}')
